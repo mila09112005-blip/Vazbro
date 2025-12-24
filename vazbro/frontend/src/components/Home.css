@@ -1,0 +1,621 @@
+.home-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d3557;
+  min-height: calc(100vh - 120px);
+  padding: 2rem 1rem;
+}
+
+/* Главная секция */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #1d3557;
+}
+
+.brand-highlight {
+  color: #e63946;
+}
+
+.main-subtitle {
+  font-size: 1.5rem;
+  color: #457b9d;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  text-align: center;
+  min-width: 200px;
+}
+
+.main-btn {
+  background: linear-gradient(135deg, #e63946 0%, #a4161a 100%);
+  color: white;
+  border: none;
+}
+
+.main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(230, 57, 70, 0.3);
+}
+
+.main-btn.outline {
+  background: white;
+  color: #1d3557;
+  border: 2px solid #1d3557;
+}
+
+.main-btn.outline:hover {
+  background: #1d3557;
+  color: white;
+  box-shadow: 0 10px 20px rgba(29, 53, 87, 0.2);
+}
+
+.main-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.car-icon {
+  font-size: 10rem;
+  animation: bounce 2s infinite alternate;
+}
+
+/* Преимущества */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1d3557;
+}
+
+.feature p {
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Секция каталога */
+.catalog-section {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.catalog-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.catalog-btn {
+  display: inline-block;
+  background: white;
+  color: #1d3557;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.catalog-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Анимации */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+  }
+  
+  .main-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .car-icon {
+    font-size: 8rem;
+  }
+  
+  .main-btn {
+    min-width: 100%;
+  }
+  
+  .features-section {
+    gap: 1.5rem;
+  }
+  
+  .catalog-section {
+    padding: 2rem 1rem;
+  }
+  
+  .catalog-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Секция отзывов */
+.reviews-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 3rem;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.review-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.review-text::before {
+  content: '"';
+  font-size: 3rem;
+  color: #e63946;
+  opacity: 0.3;
+  position: absolute;
+  left: -0.5rem;
+  top: -1rem;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #e9ecef;
+  padding-top: 1rem;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.author-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1d3557;
+}
+
+.author-info p {
+  margin: 0.2rem 0 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Адаптивность для отзывов */
+@media (max-width: 768px) {
+  .reviews-section {
+    margin: 3rem auto;
+  }
+  
+  .reviews-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .reviews-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .review-card {
+    padding: 1.5rem;
+  }
+}
+
+/*СТИЛИ ДЛЯ СТРАНИЦЫ "О НАС"*/
+
+/* Наша история */
+.about-story {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.story-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.story-content h2 {
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 1.5rem;
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #495057;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+.story-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e63946;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+.stat-text {
+  color: #1d3557;
+  font-weight: 600;
+}
+
+/* Миссия */
+.mission-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+}
+
+.mission-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 3rem;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.mission-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.mission-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mission-card h3 {
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 1rem;
+}
+
+.mission-card p {
+  color: #495057;
+  line-height: 1.6;
+}
+
+.values-list h3 {
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 1.5rem;
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.value-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.value-item h4 {
+  margin: 0 0 0.3rem;
+  color: #1d3557;
+  font-size: 1.1rem;
+}
+
+.value-item p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Команда */
+.team-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 1rem;
+}
+
+.team-description {
+  color: #457b9d;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 auto 1.5rem;
+}
+
+.team-member h3 {
+  font-size: 1.3rem;
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  color: #e63946;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.member-bio {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Контакты */
+.contacts-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.contacts-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 3rem;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #e63946;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  color: #1d3557;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  color: #495057;
+  margin: 0.5rem 0;
+}
+
+.contact-note {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-story,
+  .mission-section,
+  .team-section,
+  .contacts-section {
+    margin: 2rem auto;
+  }
+  
+  .story-content h2,
+  .mission-section h2,
+  .team-section h2,
+  .contacts-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .story-stats,
+  .team-grid,
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-card,
+  .mission-card,
+  .value-item,
+  .team-member,
+  .contact-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
